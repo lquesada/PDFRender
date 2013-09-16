@@ -30,14 +30,22 @@ echo "This might take a while..."
 
 temp=`mktemp -d`
 q=0
+
+echo "Rendering pdf to png files..."
 convert -density $density $file $temp/$file-expanded.png || q=1
 if [ $q -eq 1 ];then
   rm -rf $temp;
   exit 1
 fi
 
+echo "Rendered"
+echo ""
+
 for i in $@;do
-  convert `echo $temp/$file-expanded*.png | sort -g` -resize $1! `echo $file | sed s/'.pdf'//g`-$i.pdf 
+  echo "Generating `echo $file | sed s/'.pdf'//g`-$i.pdf file"
+  convert `echo $temp/$file-expanded*.png | sort -g` -scale $1! `echo $file | sed s/'.pdf'//g`-$i.pdf 
+  echo "Generated"
+  echo ""
 done
 
 
