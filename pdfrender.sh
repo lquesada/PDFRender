@@ -31,7 +31,7 @@ echo "This might take a while..."
 temp=`mktemp -d`
 q=0
 convert -density $density $file $temp/$file-expanded.png || q=1
-if [ $q -eq 1];then
+if [ $q -eq 1 ];then
   rm -rf $temp;
   exit 1
 fi
