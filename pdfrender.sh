@@ -9,6 +9,8 @@ if [ $# -le 2 ];then
   echo "and produces one image-based pdf file per resolution value with no external"
   echo "requirements nor rendering artifacts."
   echo ""
+  echo "PDFReader requires that convert (from ImageMagick) is in the path."
+  echo ""
   echo "Usage: bash pdfrender.sh <pdf file> <density> <list of resolutions>"
   echo ""
   echo "Example: bash pdfrender.sh slidershow.pdf 200 1024x768 800x600"
