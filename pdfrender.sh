@@ -11,7 +11,7 @@ if [ $# -le 2 ];then
   echo ""
   echo "Usage: bash pdfrender.sh <pdf file> <density> <list of resolutions>"
   echo ""
-  echo "Example: bash pdfrender.sh 200 slideshow.pdf 1024x768 800x600"
+  echo "Example: bash pdfrender.sh slidershow.pdf 200 1024x768 800x600"
   echo ""
   exit
 fi
