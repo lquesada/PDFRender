@@ -44,7 +44,7 @@ echo "Rendered"
 echo ""
 
 for i in $@;do
-  echo "Generating `echo $file | sed s/'.pdf'//g`-$i.pdf file"
+  echo "Generating `echo $file | sed s/'.pdf'//Ig`-$i.pdf file"
   convert `ls $temp/$file-expanded*.png | sort -V` -scale $1! `echo $file | sed s/'.pdf'//g`-$i.pdf 
   echo "Generated"
   echo ""
