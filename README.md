@@ -11,5 +11,5 @@ requirements nor rendering artifacts.
 
 Usage: bash pdfrender.sh <pdf file> <density> <list of resolutions>
 
-Example: bash pdfrender.sh 200 slideshow.pdf 1024x768 800x600
+Example: bash pdfrender.sh slideshow.pdf 200 1024x768 800x600
 
