@@ -2,6 +2,7 @@ PDFRender
 =========
 
 PDFRender.  
+
 Copyright (c) 2013, Luis Quesada Torres - https://github.com/lquesada | www.luisquesada.com
 
 PDFRender accepts as input a density value, a pdf file and a list of resolutions  
